@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An IASIP themed pomodoro timer with multiple themes. Pomodoro is a time management method used to break work into manageable chunks of time.">
+    <title>Pomodoro App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hhh">
+    <a href="https://github.com/nieahaya/SunnyPomodoro"><img class="header" src="github.png" alt="github"></a>
+    <a href="https://www.tumblr.com/blog/kod-lyoko"><img class="header" src="tumblr.png" alt="tumblr"></a>
+    <a href="https://ko-fi.com/ahaya"><img class="header" src="ko-fi.png" alt="ko-fi"></a>
+  </header>
+    <div><h1 class="title">It's Always Sunny in Pomodoro</h1></div>
+        <div class="time">
+            <div class="columnleft">
+                <img class="image" src="mac.jpg" alt="Mac">
+            </div>
+
+            <div class="columnright">
+                <div class="timer">
+                    <div class="mode-buttons" id="js-mode-buttons">
+                      <button data-mode="pomodoro" class="button mode-button active" id="js-pomodoro">
+                        Pomodoro
+                      </button>
+                      <button data-mode="shortBreak" class="button mode-button" id="js-short-break">
+                        Short break
+                      </button>
+                      <button data-mode="longBreak" class="button mode-button" id="js-long-break">
+                        Long break
+                      </button>
+                    </div>
+                    <div class="clock" id="js-clock">
+                      <span id="js-minutes">24</span>
+                      <span class="separator">:</span>
+                      <span id="js-seconds">59</span>
+                    </div>
+                    <progress class="js-progress" id="js-progress" max="1500" value="0"></progress>
+                    <button class="main-button" data-action="start" id="js-btn">start</button>
+                  </div>
+            </div> 
+        </div>
+        <div class="hidden">
+            <audio src="bell.mp3" data-sound="pomodoro"></audio>
+            <audio src="bell.mp3" data-sound="shortBreak"></audio>
+            <audio src="bell.mp3" data-sound="longBreak"></audio>
+          </div>
+</body>
+<script src="./app.js"></script>
+</html>
