@@ -34,7 +34,7 @@ function updateClock() {
   min.textContent = minutes;
   sec.textContent = seconds;
 
-  document.title = `${time} - Freshman Pomodoro Clock Demo`;
+  document.title = `${time} - Sunny Pomodoro Clock Demo`;
   const progress = document.getElementById('js-progress');
   progress.value = timer[timer.mode] * 60 - timer.remainingTime.total;
 }
